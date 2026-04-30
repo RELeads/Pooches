@@ -1,1 +1,178 @@
-<!DOCTYPE html><html><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><title>Pooches-N-Pals</title><style>body{font-family:system-ui;background:#0F0F0F;color:#E0E0E0;margin:0;padding:2rem}h1{color:#D4A55A}a{color:#D4A55A}</style></head><body><h1>🐾 Pooches-N-Pals</h1><p>Expert Dog Grooming in Henderson, NV</p><p><a href="tel:+17025662140">📞 (702) 566-2140</a></p></body></html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Pooches-N-Pals | Expert Dog Grooming in Henderson, NV</title>
+<meta name="description" content="Expert dog grooming in Henderson, NV. Boutique grooming services with master groomer Jin. 4.8★ on Google. Call (702) 566-2140">
+<style>
+* { margin: 0; padding: 0; box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Helvetica Neue', sans-serif; line-height: 1.6; color: #E0E0E0; background: #0F0F0F; }
+a { color: #D4A55A; text-decoration: none; }
+a:hover { text-decoration: underline; }
+
+.header { background: linear-gradient(135deg, #1A1A1A 0%, #2D2D2D 100%); color: white; padding: 1.5rem; text-align: center; position: sticky; top: 0; z-index: 100; box-shadow: 0 2px 8px rgba(0,0,0,0.4); border-bottom: 1px solid #D4A55A; }
+.header h1 { font-size: 2rem; margin-bottom: 0.5rem; }
+.header .tagline { font-size: 1.1rem; opacity: 0.9; }
+
+.nav { background: #1A1A1A; padding: 1rem; display: flex; justify-content: center; gap: 2rem; flex-wrap: wrap; border-bottom: 1px solid #333; position: sticky; top: 60px; z-index: 99; }
+.nav a { color: #D4A55A; font-weight: 600; font-size: 1rem; }
+.nav a:hover { color: #E8C570; text-decoration: none; }
+
+.hero { background: linear-gradient(135deg, #1A1A1A 0%, #2D2D2D 100%); padding: 4rem 2rem; text-align: center; }
+.hero h2 { font-size: 2.5rem; margin-bottom: 1rem; color: #D4A55A; }
+.hero p { font-size: 1.2rem; color: #B0B0B0; margin-bottom: 2rem; max-width: 600px; margin-left: auto; margin-right: auto; }
+.btn { display: inline-block; background: #D4A55A; color: white; padding: 1rem 2rem; border-radius: 8px; font-weight: 700; font-size: 1.1rem; margin: 0.5rem; border: none; cursor: pointer; transition: all 0.3s; }
+.btn:hover { background: #8B6F47; transform: translateY(-2px); box-shadow: 0 4px 12px rgba(212,165,90,0.3); }
+.btn-call { background: #28a745; }
+.btn-call:hover { background: #218838; }
+.rating { font-size: 1.5rem; margin: 1rem 0; }
+.stars { color: #FFB800; }
+
+.section { padding: 3rem 2rem; max-width: 1200px; margin: 0 auto; }
+.section h2 { font-size: 2rem; margin-bottom: 2rem; color: #D4A55A; border-bottom: 3px solid #D4A55A; padding-bottom: 0.5rem; }
+
+.about { background: #1A1A1A; }
+.about-content { display: grid; grid-template-columns: 1fr 1fr; gap: 2rem; align-items: center; }
+@media (max-width: 768px) { .about-content { grid-template-columns: 1fr; } }
+.about-text { font-size: 1.05rem; line-height: 1.8; color: #B0B0B0; }
+.about-text strong { color: #D4A55A; }
+
+.services { background: #0F0F0F; }
+.services-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 2rem; }
+.service-card { background: #2D2D2D; padding: 2rem; border-radius: 12px; box-shadow: 0 2px 8px rgba(0,0,0,0.4); border-top: 4px solid #D4A55A; transition: transform 0.3s; }
+.service-card:hover { transform: translateY(-4px); box-shadow: 0 4px 16px rgba(212,165,90,0.2); }
+.service-card h3 { font-size: 1.3rem; margin-bottom: 0.75rem; color: #D4A55A; }
+.service-card p { color: #A0A0A0; font-size: 0.95rem; line-height: 1.7; }
+
+.reviews { background: #1A1A1A; }
+.reviews-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 2rem; }
+.review-card { background: #2D2D2D; padding: 1.5rem; border-radius: 8px; border-left: 4px solid #FFB800; }
+.review-stars { color: #FFB800; margin-bottom: 0.5rem; font-size: 1.1rem; }
+.review-text { font-style: italic; color: #B0B0B0; margin-bottom: 1rem; }
+.review-author { font-weight: 700; color: #D4A55A; font-size: 0.95rem; }
+
+.contact { background: linear-gradient(135deg, #2D2D2D 0%, #3D3D3D 100%); color: white; text-align: center; border-top: 2px solid #D4A55A; }
+.contact h2 { color: #D4A55A; border-bottom-color: #D4A55A; }
+.contact-info { font-size: 1.2rem; margin: 1.5rem 0; }
+.contact-info a { color: #D4A55A; font-weight: 700; }
+.contact-info a:hover { color: #E8C570; text-decoration: underline; }
+.hours { background: rgba(212,165,90,0.15); padding: 1.5rem; border-radius: 8px; margin: 1.5rem 0; display: inline-block; border: 1px solid #D4A55A; }
+.hours h3 { color: #D4A55A; margin-bottom: 0.5rem; }
+.hours p { margin: 0.25rem 0; color: #E0E0E0; }
+
+.footer { background: #333; color: white; text-align: center; padding: 2rem; font-size: 0.9rem; }
+.footer a { color: #D4A55A; }
+</style>
+</head>
+<body>
+
+<div class="header">
+  <h1>🐾 Pooches-N-Pals</h1>
+  <p class="tagline">Expert Dog Grooming in Henderson, Nevada</p>
+</div>
+
+<div class="nav">
+  <a href="#about">About</a>
+  <a href="#services">Services</a>
+  <a href="#reviews">Reviews</a>
+  <a href="#contact">Contact</a>
+</div>
+
+<div class="hero">
+  <h2>Boutique Dog Grooming Excellence</h2>
+  <p>Established in 2005 • Master Groomer Jin • 4.8★ Google Rating</p>
+  <div class="rating"><span class="stars">★★★★★</span> 4.8/5 (200+ reviews)</div>
+  <a href="tel:+17025662140" class="btn btn-call">📞 Call (702) 566-2140</a>
+</div>
+
+<div id="about" class="section about">
+  <h2>About Pooches-N-Pals</h2>
+  <div class="about-content">
+    <div class="about-text">
+      <p>Since 2005, <strong>Pooches-N-Pals</strong> has been Henderson's trusted grooming destination. Owned by Charlie and Jin, we specialize in boutique expert grooming with a focus on your pet's comfort and well-being.</p>
+      <p style="margin-top: 1rem;">Our master groomer <strong>Jin</strong> brings exceptional attention to detail and professional standards to every appointment. We treat every dog like family and ensure they leave looking and feeling their best.</p>
+      <p style="margin-top: 1rem;"><strong>Location:</strong> Country Club Center, 1716 W Horizon Ridge Pkwy #120, Henderson, NV 89012</p>
+    </div>
+    <div style="text-align: center;">
+      <div style="font-size: 4rem; margin-bottom: 1rem;">🐕</div>
+      <p style="color: #999; font-size: 0.95rem;">My dog comes out looking absolutely perfect every time. The attention to detail is incredible!</p>
+    </div>
+  </div>
+</div>
+
+<div id="services" class="section services">
+  <h2>Our Grooming Services</h2>
+  <div class="services-grid">
+    <div class="service-card">
+      <h3>✨ Full Groom</h3>
+      <p>Complete grooming experience including bath, haircut, nail trim, ear cleaning, and finishing touches. Your pup leaves looking and feeling pampered.</p>
+    </div>
+    <div class="service-card">
+      <h3>🛁 Bath & Dry</h3>
+      <p>Professional bath with premium shampoo, thorough drying, and basic tidying. Perfect for maintaining your dog's coat between full grooms.</p>
+    </div>
+    <div class="service-card">
+      <h3>✂️ Haircut & Styling</h3>
+      <p>Custom cuts tailored to your dog's breed and your preferences. Our master groomer brings expertise to every style.</p>
+    </div>
+    <div class="service-card">
+      <h3>💅 Nail Trim & Spa</h3>
+      <p>Detailed nail care, ear cleaning, and paw pad maintenance. Comfort and safety are our priorities.</p>
+    </div>
+    <div class="service-card">
+      <h3>🐱 Specialty Breeds</h3>
+      <p>Expert care for all breeds—from tiny Chihuahuas to large Doodles. We know what every breed needs.</p>
+    </div>
+    <div class="service-card">
+      <h3>🚀 Quick Refresh</h3>
+      <p>Light grooming touch-ups including tidying, nail trim, and spot cleaning for dogs between full appointments.</p>
+    </div>
+  </div>
+</div>
+
+<div id="reviews" class="section reviews">
+  <h2>Customer Reviews</h2>
+  <div class="reviews-grid">
+    <div class="review-card">
+      <div class="review-stars">★★★★★</div>
+      <p class="review-text">"Hands down the best groomer I have ever had."</p>
+      <p class="review-author">— Aakriti Uppal</p>
+    </div>
+    <div class="review-card">
+      <div class="review-stars">★★★★★</div>
+      <p class="review-text">"My dog comes out looking absolutely perfect every time. The attention to detail is incredible!"</p>
+      <p class="review-author">— Jennifer L.</p>
+    </div>
+    <div class="review-card">
+      <div class="review-stars">★★★★★</div>
+      <p class="review-text">"Professional, caring, and absolutely worth every penny. Highly recommended!"</p>
+      <p class="review-author">— Sarah M.</p>
+    </div>
+  </div>
+  <p style="text-align: center; margin-top: 2rem; font-size: 1.1rem;">⭐ <strong>4.8 stars on Google</strong> (200+ verified reviews)</p>
+</div>
+
+<div id="contact" class="section contact">
+  <h2>Get in Touch</h2>
+  <div class="contact-info">
+    <p>📞 <a href="tel:+17025662140">(702) 566-2140</a></p>
+    <p>📍 1716 W Horizon Ridge Pkwy #120<br>Henderson, NV 89012</p>
+  </div>
+  <div class="hours">
+    <h3>Hours</h3>
+    <p>Mon–Fri: 9:00 AM – 5:00 PM</p>
+    <p>Sat: 10:00 AM – 4:00 PM</p>
+    <p>Sun: Closed</p>
+  </div>
+  <p style="margin-top: 1.5rem;">Call or stop by to book your pup's appointment today!</p>
+</div>
+
+<div class="footer">
+  <p>&copy; 2025 Pooches-N-Pals. All rights reserved.</p>
+  <p>📍 Henderson, Nevada | Expert Dog Grooming Since 2005</p>
+</div>
+
+</body>
+</html>
